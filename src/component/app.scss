@@ -1,0 +1,74 @@
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+
+.AdviceSection {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 15rem;
+
+  .AdviceBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23rem;
+    height: 12rem;
+    background: var(--DarkGrayishBlue);
+    border-radius: 0.5rem;
+
+    .loading {
+      color: var(--LightCyan);
+    }
+
+    .AdviceDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      .AdviceId {
+        color: var(--NeonGreen);
+      }
+
+      .advice {
+        color: var(--LightCyan);
+        text-align: center;
+        padding: 0rem 1rem 0rem 1rem;
+      }
+
+      .line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 0.1px;
+        width: 20rem;
+        margin: 1rem;
+        background-color: var(--GrayishBlue);
+        border: none;
+      }
+    }
+
+    .BtnDiv {
+      background: var(--NeonGreen);
+      border-radius: 2rem;
+      height: 2.5rem;
+      width: 2.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: -12rem;
+      position: fixed;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
