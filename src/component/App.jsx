@@ -41,11 +41,8 @@ function App() {
             <hr className="line" />
           </div>
         )}
-        <div className="BtnDiv">
-          <BsFillDice5Fill
-            className="btn"
-            onClick={() => window.location.reload(false)}
-          />
+        <div className="BtnDiv" onClick={() => window.location.reload(false)}>
+          <BsFillDice5Fill className="btn" />
         </div>
       </div>
     </section>
